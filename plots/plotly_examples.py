@@ -26,7 +26,7 @@ def scatter_plot_geopandas():
     # Output this plot to a html file in the current working directory, i.e. /plots/scatter_geopandas.html
     output_file = os.path.join(os.getcwd(), "scatter_geopandas.html")
     fig.write_html(output_file)
-
+    # This is a test cmt
 
 if __name__ == "__main__":
     print("Creating plotly examples...")
