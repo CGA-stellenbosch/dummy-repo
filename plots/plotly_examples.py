@@ -21,7 +21,8 @@ def scatter_plot_geopandas():
     fig = px.scatter_geo(geo_df,
                          lat=geo_df.geometry.y,
                          lon=geo_df.geometry.x,
-                         hover_name="name")
+                         hover_name="name",
+                         title="Helen\'s map")
 
     # Output this plot to a html file in the current working directory, i.e. /plots/scatter_geopandas.html
     output_file = os.path.join(os.getcwd(), "scatter_geopandas.html")
